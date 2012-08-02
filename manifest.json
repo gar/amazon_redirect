@@ -1,0 +1,13 @@
+{
+  "name": "Amazon.com to Amazon.co.uk",
+  "version": "0.1",
+  "description": "View an Amazon.com book page on Amazon.co.uk",
+  "background_page": "background.html",
+   "content_scripts": [
+   {
+     "matches": ["http://*.amazon.com/*"],
+     "js": ["content.js"]
+   }
+   ],
+  "permissions": ["tabs"]
+}
